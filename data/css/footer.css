@@ -1,0 +1,60 @@
+footer
+{
+  background-color: rgba(0,0,0,0.5);
+  align-content: center;
+  height: 10%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.grid {
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.col-lg-3 a img {
+  height:50%;
+  border: 10px solid transparent;
+}
+
+.col-lg-3 a img:hover {
+  height:50%;
+  border: 10px solid transparent;
+  animation-name: jump;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.col-lg-3 {
+  height:inherit;
+  display: block;
+  width:24.99999%;
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+
+@keyframes jump {
+  from {
+    margin-top: 0%
+  }
+  25% {
+      margin-top: 25%;
+  }
+  50% {
+    margin-top: 0%;
+  }
+  75% {
+    margin-top: -25%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}

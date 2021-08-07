@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Anubhav Sharma - Computer Science student at IIEST Shibpur.">
+    <meta name="author" content="Shashi Prakash Shah">
+
+    <title> Shashi's Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./data/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!--  SECTION HOME -->
+    <section id="home">
+      <div class="banner flex-container">
+        <div class="name flex-item">
+            <span style="font-size:22px">Hi, I'm </span><br>
+            <span id="full_name" class="highlight"></span><span class="cursor">|</span>
+            <br><span style="font-size:22px; margin-top:1.5rem;">A computer science student and Web Developer.</span>
+        </div>
+      </div>
+
+      <nav class="navbar">  <!-- Nav bar-->
+        <div class="flex-nav-container">
+          <div class="flex-nav-item"><a class="nav-item" href="#home">    Home     </a></div>
+          <div class="flex-nav-item"><a class="nav-item" href="#about">   About    </a></div>
+          <div class="flex-nav-item"><a class="nav-item" href="#project"> Project  </a></div>
+          <div class="flex-nav-item"><a class="nav-item" href="#contact"> Contact  </a></div>
+        </div>
+      </nav>       <!-- END Nav bar -->
+    </section>
+
+    <!-- END HOME -->
+    <!-- SECTION ABOUT -->
+    <section id="about">
+     <div class="flex-about-container">
+       <div class="header"><h1>ABOUT</h1></div><br>
+       <div class="header-bar"></div>
+       <div class = "clear_space"></div><br>
+
+         <div class="flex-image-container">
+           <!-- Card 1 -->
+           <div id ="card-1" class="card left-card flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <div class="flex-image"> <img src="./data/images/rocket.png" height="70" alt="Dynamic Webpages"> <br><span class="head"> Dynamic </span></div>
+               </div>
+               <div class="flip-card-back"><span class="card-content"> No more Static webpages, they will live too...</span></div>
+             </div>
+           </div>
+
+           <!-- Card 2 -->
+
+           <div id ="card-2" class="card top flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <div class="flex-image"> <img src="./data/images/application.png" height="70" alt="Web applications"> <br><span class="head"> Web Apps</span></div>
+               </div>
+               <div class="flip-card-back"><span class="card-content"> On the go-available web-apps </span></div>
+             </div>
+           </div>
+
+           <!-- Card 3 -->
+
+           <div id ="card-3" class="card right-card flip-card">
+             <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <div class="flex-image"> <img src="./data/images/responsive.png" height="70" alt="Responsive websites"> <br><span class="head"> Responsive </span></div>
+               </div>
+               <div class="flip-card-back"><span class="card-content"> Screen big or small, runs everywhere with ease </span></div>
+             </div>
+           </div>
+
+         </div>  <!-- END flex-image-container  -->
+       </div>  <!-- END flex-about-container  -->
+
+       <div class = "clearfix"></div>
+       <div class="info row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2">
+          <img class="myimage" src="./data/images/front-img3.png" alt="Mr. Shah">
+        </div>
+        <div class="col-lg-8">
+          <div class="about">
+            <p> My name is Shashi Prakash Shah. I'm an M.Tech student at Indian Institute of Engineering Science and Technology, Computer Science Department. I did B.Tech in Computer Science and Engineering from Malauna Abul Kalam Azad University of Technology, Kolkata. I was born and raised in Rishra, Hooghly</p>
+            <p>I have held multiple intern position at Einsehen.<br>
+              Looking for interesting projects to work on, with interest in Network and Cybersecurity, with demonstrated skills in frontend development and web applications development and deployment.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>   <!-- END row-->
+     </section>
+     <!-- END ABOUT -->
+
+
+     <!-- SECTION PROJECT-->
+
+     <section id="project">
+       <div class="flex-project-container">
+         <div class="header"><h1>PROJECTS</h1></div><br>
+         <div class="header-bar"></div>
+         <div class = "clear_space"></div><br>
+
+         <div class="flex-project-element-container">
+
+           <div class="card-carousel">
+            <div class="my-card" id="project-card-1"></div>
+            <div class="my-card" id="project-card-2"></div>
+            <div class="my-card" id="project-card-3"></div>
+            <div class="my-card" id="project-card-4"></div>
+            <!-- <div class="my-card" id="project-card-5"></div> -->
+           </div>
+
+           <div class="project_display">
+             <div class="project_info" id="project-info-1" style="display: none">
+               <h1 class="project-head">XML to C_struct</h1>
+               <div class = "inline grid">
+                 <img class="col-lg-4 scale-image"src="./data/images/XML-input.png" alt="chatbot application" width="100%"/>
+                 <div class="col-lg-1-2"></div>
+                 <img class="col-lg-4 scale-image" src="./data/images/XML-output1.png" alt="chatbot code" width="100%"/>
+                 <div class="col-lg-1-2"></div>
+                 <img class="col-lg-4 scale-image" src="./data/images/XML-output2.png" alt="chatbot code" width="100%"/>
+                 <div class="col-lg-1-2"></div>
+               </div>
+               <p class="project-text">
+                 Designed and developed an module to represent data in XML format to a representation consist of structures and arrays as defined in the
+C programming language. It is implemented using C, along with flex and bison for parsing the XML using its grammar. For transformation from XML to C structures
+and array(in the form of defining and initializing), I leverage the parse tree and an intermediate tree representation of the XML. This module helps in handling XML represented data while working with application written in C.
+               </p>
+           </div>
+           <div class="project_info" id="project-info-2" style="display: none">
+             <h1 class="project-head">Bird Species Classification</h1>
+             <h1 class="project-head">Voice-based Chatbot for Indian Language</h1>
+
+             <div class = "inline grid">
+               <img class="col-lg-5"src="./data/images/bird-dataset.jpg" alt="chatbot application" width="100%" preserveAspectRatio="introduced"/>
+               <div class="col-lg-1"></div>
+               <img class="col-lg-5" src="./data/images/bird-list.png" alt="chatbot code" width="100%"/>
+               <div class="col-lg-1"></div>
+             </div>
+
+             <p class="project-text">
+               Developed a Convolutional Neural Network model, inspired from VCC-16 and Alex-Net, to classify birds as per species. We choose 20 birds categories out of 200 birds categories listed in the <emp>Caltech-UCSD Birds 200 (CUB-200)</emp>. We compared our model with state-of-the-art Neural network models to fine-tune our parameters. During training we used both pre-trained imageNet weights and random weights to initialise the networks. Finally, we developed a model that was at par with ResNet-50 in terms of testing accuracy and outperformes it in terms of training accuracy. We also learned the training graph through fine-tuning in order to obtain a better understanding of how neural networks works.
+             </p>
+         </div>
+           <div class="project_info" id="project-info-3" style="display: none">
+             <h1 class="project-head">Voice-based Chatbot for Indian Language</h1>
+
+             <div class = "inline grid">
+               <img class="col-lg-4"src="./data/images/chatbot1.png" alt="chatbot application" width="100%" preserveAspectRatio="introduced"/>
+               <div class="col-lg-1"></div>
+               <img class="col-lg-4" src="./data/images/chatbot2.png" alt="chatbot code" width="100%"/>
+             </div>
+
+             <p class="project-text">
+               As a summer intern at CSIR- Central Mechanical Engineering and Research Institute, Durgapur, I developed an application for translation
+               through voice using APIs provided by Google. I have used  speech to text and text to speech API for voice to text and vice versa conversion. For conversion of Bengali  text to English and  and then back to Bengali, I have used Google's translation API. Further, I  scaled this application into a chatbot based out of <b>Question Answering System</b>
+               It takes input as a voice clip or during runtime using microphone and generates result based on the corpus presented in the system as in speech. For testing, I had taken wikipedia page about Computer. This project helped me learn about API's, GUI programming in Tkinter(Python 3), and introduced me to Natural Language Processing.
+             </p>
+             <div class="inline grid">
+             <video class="col-lg-5" src="./data/videos/chatbot-video1.mp4" controls preload="auto" muted  width="95%">
+             </video>
+             <div class="col-lg-2"></div >
+             <video class="col-lg-5" src="./data/videos/chatbot-video2.mp4" controls preload="auto" muted  width="95%">
+             </video>
+           </div>
+           <p> Thanks to my friend Aromita and Shupathita for their help in testing this application</p>
+         </div>
+           <div class="project_info" id="project-info-4" style="display: none">
+             <h1 class="project-head">Einsehen Internships</h1>
+             <div class = "inline grid">
+               <div class="col-lg-8" style="height: 80vh; overflow: scroll;" >
+                 <img src="./data/images/einsehen.png" alt="Einsehen website snapshot" width="100%"  style=" overflow: hidden;"/>
+               </div>
+               <div class="col-lg-1"></div>
+               <div class="col-lg-3">
+                 <p class="project-text">
+                   In my first internship with Einsehen, I developed and tested the company's main <a href="http://www.einsehen.com" target="_blank"> website</a>. I leveraged HTML5 and Cascading Style Sheet(CSS2) to structure the page and vanilla Javascript to achieve the carousel, smooth scrolling, and animations.
+I also discovered how to use JQuery library as well as the Bootstrap framework over my internship.  In my other Internship there, I designed and implemented a chatbot web application which reduces the amount of time spent searching for information on the website. I also assisted with the application's deployment on AWS EC2.
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- PROJECT INFOMATION TEMPLATE
+
+           <div class="project_info" id="project-info-#" style="display: none">
+             <h1 class="project-head">Project #</h1>
+             <img src="./data/images/*.png" alt=""/>
+             <p>
+               information:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus luctus lacus fringilla tempus. Fusce dignissim at nibh nec efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer consequat fermentum sapien ac faucibus. Phasellus rhoncus nisl nec vulputate malesuada. Etiam gravida, velit et semper condimentum, orci mi euismod tortor, at faucibus nunc enim at metus. Vestibulum faucibus felis a leo imperdiet lobortis. Sed mauris lorem, cursus et velit eu, dignissim convallis justo. Duis consectetur, magna blandit hendrerit mattis, eros tortor volutpat velit, sed mattis dolor diam non lorem.
+
+Duis bibendum feugiat nisi, accumsan bibendum urna consectetur sit amet. Nunc ultricies est sagittis velit pulvinar, sed sodales nibh porta. Suspendisse viverra ornare lacinia. Mauris vel pulvinar risus. Cras commodo nunc vel elit luctus sagittis. Nullam ac leo augue. Mauris ornare ornare sapien et varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse auctor felis ante, non sodales arcu sodales a. Sed dui nisl, sodales at commodo id, lobortis non dolor. Mauris vehicula maximus ex ut blandit. Proin in odio sit amet neque tincidunt viverra. Nam tincidunt, felis a scelerisque accumsan, sem velit dictum sapien, sodales scelerisque nibh urna a quam.
+
+Proin vehicula, lorem et venenatis facilisis, lectus magna volutpat dui, ut dignissim ex lorem non quam. Maecenas ultricies placerat dolor ut auctor. In in ligula a eros interdum mollis non vel metus. Nulla eu imperdiet elit. Vivamus vel pharetra mi, faucibus faucibus metus. Aliquam pretium mi in nibh ultrices consequat. Nullam ultrices tincidunt libero sed maximus. Etiam consectetur eros at nibh congue, a commodo arcu ultrices. Cras porttitor dictum elit, interdum commodo justo tincidunt in. Donec a mattis mauris. Donec fermentum, enim nec sodales tempor, magna magna tristique libero, a viverra leo odio rhoncus mi. Nulla a maximus ipsum, non iaculis mi. Phasellus dictum varius arcu, nec elementum libero interdum a. Phasellus massa velit, dictum in lacus quis, auctor imperdiet est.
+             </p>
+           </div>-->
+
+
+         </div> <!-- ends project_display -->
+       </div> <!-- ends flex-project-element-container-->
+     </div>   <!-- ends flex-project-container -->
+     </section>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+     <!-  Custom Javascript -->
+
+     <script src="./data/Js/carousel.js"></script>
+     <script src="./data/Js/index.js"></script>
+
+     <!-- end Section PROJECT-->
+     <section id="contact">
+       <!--
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="rgba(166,193,238,0.8)" stroke="white"></path>
+        </svg>-->
+       <div class="flex-contact-container">
+         <div class="header"><h1>Contact Me</h1></div><br>
+         <div class="header-bar"></div>
+         <div class = "clear_space"></div><br>
+
+         <div class="flex-contact-element-container">
+           <div class="resume box-hover">
+             <div class="content-contact">
+               <a href="./data/Resume_S_P_Shah.pdf" target="_blank" ><img src="./data/images/resume.png" alt="Resume"/></a>
+             </div>
+           </div>
+
+           <div class="email box-hover">
+             <div class="content-contact">
+               <a href="mailto:shahshashi97@ymail.com"><img src="./data/images/email.png" alt="Email" /></a>
+             </div>
+         </div>
+       </div>
+     </div>
+     </section>
+
+      <footer>
+        <div class="grid">
+         <div class="col-lg-3"></div>
+         <div class="col-lg-3">
+           <a href="https://www.linkedin.com/in/shashi-prakash-shah-466b38153/"><img src="./data/images/linkedin.png" alt="Linkedin" /></a>
+         </div>
+         <div class="col-lg-3">
+           <a href="https://github.com/spshah"><img src="./data/images/github.png"  alt="Github" /> </a>
+         </div>
+         <div class="col-lg-3"></div>
+       </div>   <!-- END grid-->
+    </footer>
+
+  </body>
+</html>

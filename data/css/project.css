@@ -1,0 +1,271 @@
+.flex-project-container {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width:inherit;
+}
+
+.flex-project-element-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: space-between;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.project_display {
+  height: 100%;
+  width:90vw;
+  opacity: 0.8;
+  position:relative;
+  margin-top:15vh;
+}
+
+@keyframes projectAnim {
+  from{
+    opacity: 0.0;
+  }
+  to{
+    opacity: 1.0;
+  }
+
+}
+
+
+.project_anim {
+  animation-name: projectAnim;
+  animation-duration: 3s;
+}
+
+
+.flex-project-element-container {
+  /*min-height: 100vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ece9e6;
+  background-image: linear-gradient(to top, rgba(251,194,235,0), rgba(166,193,238,1));
+  padding-bottom: 2vh;
+
+}
+
+.flex-project-element-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  top: -2.5rem;
+}
+
+.project-head {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 4rem;
+
+
+}
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 8vh;
+}
+
+.card-carousel .my-card {
+  height: 20rem;
+  width: 12rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  background: #2e5266;
+  background: linear-gradient(to top, #2e5266, #6e8898);
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card:nth-child(0):before {
+  content: '0';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  content: '1';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  content: '2';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  content: '3';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  content: '4';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(5):before {
+  content: '5';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(6):before {
+  content: '6';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(7):before {
+  content: '7';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(8):before {
+  content: '8';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(9):before {
+  content: '9';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.project-text {
+  font-size: 2rem;
+  font-family: roboto;
+  text-align: justify;
+  padding: 2% 5% 2% 5%;
+  font-family: 'Style Script', cursive;
+}
+.inline{
+  margin: 0% 2% 0% 2%;
+  width: 95%;
+}
+.col-lg-5 {
+  width: 41.666%;
+}
+
+.col-lg-1-2 {
+  width: 4.1666%;
+}
+
+.scale-image{
+  height: 50vh;
+}
