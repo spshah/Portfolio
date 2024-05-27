@@ -1,15 +1,14 @@
-
+/*
 .flex-contact-container {
   display:flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  width:inherit;
 }
 
 .flex-contact-element-container {
-  background: #f3f5f8;
+
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -18,8 +17,7 @@
   position: relative;
   width: 90%;
   box-sizing: border-box;
-  margin-left: 5vw;
-  margin-right: 5vw;
+
 }
 
 .resume {
@@ -56,3 +54,4 @@
 .content-contact a img {
   height: 80%;
 }
+*/

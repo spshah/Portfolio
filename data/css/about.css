@@ -1,4 +1,4 @@
-.flex-about-container {
+/*.flex-about-container {
   display:flex;
   align-items: center;
   flex-direction: column;
@@ -200,10 +200,8 @@
 }
 
 .about {
-  color: #666665;
   font-size: 18px;
   line-height: 36px;
-  font-family: "Open Sans", sans-serif;
 }
 
 
@@ -243,4 +241,193 @@
   background-color: #6c49db;
   color: white;
   transform: rotateY(180deg);
+}
+*/
+
+#about .inner {
+  display: block;
+  text-align:justify;
+}
+
+#about .intro ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+  font-size: var(--fz-xl);
+}
+
+
+.about_me_img {
+  position: relative;
+  max-width: 300px;
+  margin: 50px auto 0px;
+  width: 70%;
+}
+.about_me_img .wrapper::after {
+  border: 2px solid var(--green);
+  top: 14px;
+  left: 14px;
+  z-index: -1;
+}
+.about_me_img .wrapper::before, .about_me_img .wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  transition: var(--transition);
+  box-sizing: border-box;
+}
+.about_intro ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+.about_intro ul.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+.about_intro ul.skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--green);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+  top:8px;
+}
+
+.about_me_img .wrapper::before {
+  top: 0px;
+  left: 0px;
+  mix-blend-mode: screen;
+}
+.about_me_img .wrapper {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+.about_me_img .wrapper .img {
+  position: relative;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  vertical-align: middle;
+}
+
+.about_me_img .wrapper:hover {
+	display: hidden;
+}
+
+
+@media screen and (min-width:768px) {
+#about .inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  text-align:justify;
+}
+
+#about .intro ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+  font-size: var(--fz-xl);
+}
+
+
+.about_me_img {
+  position: relative;
+  max-width: 300px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.about_me_img .wrapper::after {
+  border: 2px solid var(--green);
+  top: 14px;
+  left: 14px;
+  z-index: -1;
+}
+.about_me_img .wrapper::before, .about_me_img .wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  transition: var(--transition);
+  box-sizing: border-box;
+}
+.about_intro ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+.about_intro ul.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xl);
+}
+.about_intro ul.skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--green);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+  top:8px;
+}
+
+.about_me_img .wrapper::before {
+  top: 0px;
+  left: 0px;
+  mix-blend-mode: screen;
+}
+.about_me_img .wrapper {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+.about_me_img .wrapper .img {
+  position: relative;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  vertical-align: middle;
+}
+
+.about_me_img .wrapper:hover {
+	display: hidden;
+}
 }

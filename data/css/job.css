@@ -1,0 +1,170 @@
+.job_type{
+margin-bottom:2rem;
+}
+
+#Internships .inner, #Experiences .inner {
+  display:flex;
+  flex-direction :column;
+}
+.jobSidebar {
+  position: relative;
+  width: max-content;
+  z-index: 3;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display:flex;
+  flex-direction:row;
+}
+
+.JobSidebarindicator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  height: 2px;
+  width: 90%;
+  max-width: var(--tab-width) + 10px;
+  border-radius: var(--border-radius);
+  background: var(--green);
+  transform: translateX(calc(0 * var(--tab-width) + 20px));
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
+
+@media screen and (min-width:768px) {
+  #Internships .inner, #Experiences .inner {
+    display:flex;
+    flex-direction :row;
+  }
+  .jobSidebar {
+    flex-direction:column;
+  }
+  .JobSidebarindicator {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 2px;
+    height: var(--tab-height);
+    border-radius: var(--border-radius);
+    background: var(--green);
+    transform: translateY(calc(0 * var(--tab-height)));
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+  }
+
+  .sel_btn , .desel_btn{
+    border-left: 2px solid var(--lightest-navy);
+  }
+  .JobContainer {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+    text-align:justify;
+  }
+}
+.sel_btn {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0px 20px 2px;
+  background-color: transparent;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  text-align: left;
+  white-space: nowrap;
+}
+button {
+  cursor: pointer;
+  border: 0px;
+    border-left-width: 0px;
+    border-left-style: none;
+    border-left-color: currentcolor;
+  border-radius: 0px;
+}
+
+.desel_btn {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0px 20px 2px;
+  
+  background-color: transparent;
+  color: var(--slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.desel_btn:hover, .desel_btn:focus {
+  background-color: var(--light-navy);
+}
+.desel_btn:hover, .desel_btn:focus-visible {
+  color: var(--green);
+  outline: 0px;
+}
+
+.job_type {
+	display:flex;
+	flex-direction:row nowrap;
+	align-items: flex-start;
+	align-content: flex-start;
+  justify-content: space-between;
+  width:30vw;
+}
+
+@media scrren (min-width:786px) {
+  .job-type {
+    width:20px;
+  }
+}
+
+.job_type button {
+	height:40px;
+	width: 20%;
+	border-left:0px;
+}
+
+
+
+.JobContainer {
+  position: relative;
+  width: 100%;
+  text-align:justify;
+}
+
+.JobContainer h3 {
+  text-align: left;
+}
+
+.Jobpanel {
+  width: 100%;
+  height: auto;
+  padding: 10px 5px;
+}
+	
+.job_type_inner {
+	padding-top: 10vh;
+}
+
+#Internship-1_ b {
+	color:var(--lightest-slate);
+}
+#Internship-1_ h5 {
+	color:var(--white);
+	margin-top:3rem;
+  font-size: var(--fz-xl);
+}

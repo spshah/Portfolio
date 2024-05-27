@@ -1,0 +1,128 @@
+@keyframes blink{
+  from {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  to {
+    opacity:1.0;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .punch {
+    width: 75%;
+  }
+}
+
+
+.intro {
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
+    padding-top: 0px;
+}
+
+@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+  .intro {
+    height: auto;
+  }
+}
+
+.intro h1 {
+  margin: 0px 0px 30px 4px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+  font-weight: 400;
+}
+
+.big-heading {
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 600;
+}
+
+.status{
+	position:relative;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	display: inline;
+	font-size:xx-small;
+	align-items:center;
+	vertical-align: super;
+}
+
+.notification-status {
+  width: .5em;
+  height: .5em;
+  border-radius: 1em;
+  background: red;
+  box-shadow: 0 0 .5em red;
+  display: inline-block;
+  margin-right: .5em;
+  animation: blink 1s infinite;
+}
+
+.recruitment-notifier {
+  color: #fff;
+  display: inline-block;
+}
+
+.big-heading1 {
+  margin: 0px;
+  font-size: clamp(30px, 2vw, 50px);
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.intro .email-link::after {
+  display: none !important;
+
+}
+
+main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 150px 50px;
+}
+
+main.fillHeight {
+  padding: 0px 50px;
+}
+
+@media screen and(min-width:768px) {
+main.fillHeight {
+  padding: 0px 100px;
+}
+}
+
+@media (min-width: 1080px) {
+  main.fillHeight {
+    padding: 0px 150px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  main {
+    
+    padding: 200px 100px;
+  }
+}
+@media (min-width: 1080px) {
+  main {
+    padding: 200px 150px;
+  }
+}
