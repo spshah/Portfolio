@@ -119,16 +119,16 @@ button {
 
 .job_type {
 	display:flex;
-	flex-direction:row nowrap;
+	flex-direction:row;
 	align-items: flex-start;
 	align-content: flex-start;
   justify-content: space-between;
-  width:30vw;
+  width:50vw;
 }
 
 @media scrren (min-width:786px) {
   .job-type {
-    width:20px;
+    width:30px;
   }
 }
 

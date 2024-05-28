@@ -105,7 +105,7 @@ m-769 -575 c67 -67 80 -85 67 -91 -26 -10 -20 -25 7 -18 21 5 28 0 45 -35 42
 							<div class="flex-nav-container">
 								<div class="flex-nav-item"><a  href="#about">About</a></div>
 								<div class="flex-nav-item"><a  href="#jobs">Experience</a></div>
-								<div class="flex-nav-item"><a  href="#project">Project</a></div>
+								<div class="flex-nav-item"><a  href="#projects">Project</a></div>
 								<div class="flex-nav-item"><a  href="#contact">Contact</a></div>
 								<div class="flex-nav-item"><a class = "resume-lin resume-button" href="./data/Resume_S_P_Shah.pdf"  target="_blank"><span style="color:var(--green)">Resume</span></a></div>
 							</div>
@@ -429,111 +429,6 @@ m-769 -575 c67 -67 80 -85 67 -91 -26 -10 -20 -25 7 -18 21 5 28 0 45 -35 42
 				</section>
 				<section>
 
-
-
-			
-<!--
-<div class="inner">
-         <div class="flex-project-element-container">
-
-           <div class="card-carousel">
-            <div class="my-card" id="project-card-1"></div>
-            <div class="my-card" id="project-card-2"></div>
-            <div class="my-card" id="project-card-3"></div>
-            <div class="my-card" id="project-card-4"></div>
-            <!- <div class="my-card" id="project-card-5"></div> ----
-           </div>
-
-           <div class="project_display">
-             <div class="project_info" id="project-info-1" style="display: none">
-               <h1 class="project-head">XML to C_struct</h1>
-               <div class = "inline grid">
-                 <img class="col-lg-4 scale-image"src="./data/images/XML-input.png" alt="chatbot application" width="100%"/>
-                 <div class="col-lg-1-2"></div>
-                 <img class="col-lg-4 scale-image" src="./data/images/XML-output1.png" alt="chatbot code" width="100%"/>
-                 <div class="col-lg-1-2"></div>
-                 <img class="col-lg-4 scale-image" src="./data/images/XML-output2.png" alt="chatbot code" width="100%"/>
-                 <div class="col-lg-1-2"></div>
-               </div>
-               <p class="project-text">
-                 Designed and developed a module to represent data in XML format to a representation consist of structures and arrays as defined in the
-C programming language. It is implemented using C, along with flex and bison for parsing the XML using its grammar. For the transformation from XML to C structures
-and array(in the form of defining and initializing), I leverage the parse tree and an intermediate tree representation of the XML. This module helps in handling XML represented data while working with an application written in C.
-               </p>
-           </div>
-           <div class="project_info" id="project-info-2" style="display: none">
-             <h1 class="project-head">Bird Species Classification</h1>
-
-             <div class = "inline grid">
-               <img class="col-lg-5"src="./data/images/bird-dataset.jpg" alt="chatbot application" width="100%" preserveAspectRatio="introduced"/>
-               <div class="col-lg-1"></div>
-               <img class="col-lg-5" src="./data/images/bird-list.png" alt="chatbot code" width="100%"/>
-               <div class="col-lg-1"></div>
-             </div>
-
-             <p class="project-text">
-               Developed a Convolutional Neural Network model, inspired from VCC-16 and Alex-Net, to classify birds as per species. We choose 20 birds categories out of 200 birds categories listed in the <emp>Caltech-UCSD Birds 200 (CUB-200)</emp>. We compared our model with state-of-the-art Neural network models to fine-tune our parameters. During training, we used both pre-trained imageNet weights and random weights to initialise the networks. Finally, we developed a model that was at par with ResNet-50 in terms of testing accuracy and outperformed it in terms of training accuracy. We also learned the training graph through fine-tuning in order to obtain a better understanding of how neural networks works.
-             </p>
-         </div>
-           <div class="project_info" id="project-info-3" style="display: none">
-             <h1 class="project-head">Voice-based Chatbot for Indian Language</h1>
-
-             <div class = "inline grid">
-               <img class="col-lg-4"src="./data/images/chatbot1.png" alt="chatbot application" width="100%" preserveAspectRatio="introduced"/>
-               <div class="col-lg-1"></div>
-               <img class="col-lg-4" src="./data/images/chatbot2.png" alt="chatbot code" width="100%"/>
-             </div>
-
-             <p class="project-text">
-               As a summer intern at CSIR- Central Mechanical Engineering and Research Institute, Durgapur, I developed an application for translation
-               through voice using APIs provided by Google. I have used the Speech-to-text and the Text-to-Speech API for voice to text and vice versa conversion. For conversion of Bengali to English and vice versa, I have used Google's translation API. Further, I have used Google's translation API. Further, I  scaled this application into a chatbot based out of <b>Question Answering System</b>
-               It takes input as a voice clip or during runtime using a microphone and generates results based on the corpus presented in the system as in speech. For testing, I had taken a Wikipedia page about Computer. This project helped me learn about API's, GUI programming in Tkinter(Python 3) and introduced me to Natural Language Processing.
-             </p>
-             <div class="inline grid">
-             <video class="col-lg-5" src="./data/videos/chatbot-video1.mp4" controls preload="auto" muted  width="95%">
-             </video>
-             <div class="col-lg-2"></div >
-             <video class="col-lg-5" src="./data/videos/chatbot-video2.mp4" controls preload="auto" muted  width="95%">
-             </video>
-           </div>
-           <p> Thanks to my friend Aromita and Shupathita for their help in testing this application</p>
-         </div>
-           <div class="project_info" id="project-info-4" style="display: none">
-             <h1 class="project-head">Einsehen Internships</h1>
-             <div class = "inline grid">
-               <div class="col-lg-8" style="height: 80vh; overflow: scroll;" >
-                 <img src="./data/images/einsehen.png" alt="Einsehen website snapshot" width="100%"  style=" overflow: hidden;"/>
-               </div>
-               <div class="col-lg-1"></div>
-               <div class="col-lg-3">
-                 <p class="project-text">
-                   In my first internship with Einsehen, I developed and tested the company's main <a href="http://www.einsehen.com" target="_blank"> website</a>. I leveraged HTML5 and Cascading Style Sheet(CSS2) to structure the page and vanilla Javascript to achieve the carousel, smooth scrolling, and animations.
-I also discovered how to use the JQuery library as well as the Bootstrap framework during my internship.  In my other internship there, I designed and implemented a chatbot web application that reduces the amount of time spent searching for information on the website. I also assisted with the application's deployment on AWS EC2.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <!- PROJECT INFOMATION TEMPLATE=--
-
-           <div class="project_info" id="project-info-#" style="display: none">
-             <h1 class="project-head">Project #</h1>
-             <!-<img src="./data/images/*.png" alt=""/>--
-             <p>
-               information:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus luctus lacus fringilla tempus. Fusce dignissim at nibh nec efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer consequat fermentum sapien ac faucibus. Phasellus rhoncus nisl nec vulputate malesuada. Etiam gravida, velit et semper condimentum, orci mi euismod tortor, at faucibus nunc enim at metus. Vestibulum faucibus felis a leo imperdiet lobortis. Sed mauris lorem, cursus et velit eu, dignissim convallis justo. Duis consectetur, magna blandit hendrerit mattis, eros tortor volutpat velit, sed mattis dolor diam non lorem.
-
-Duis bibendum feugiat nisi, accumsan bibendum urna consectetur sit amet. Nunc ultricies est sagittis velit pulvinar, sed sodales nibh porta. Suspendisse viverra ornare lacinia. Mauris vel pulvinar risus. Cras commodo nunc vel elit luctus sagittis. Nullam ac leo augue. Mauris ornare ornare sapien et varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse auctor felis ante, non sodales arcu sodales a. Sed dui nisl, sodales at commodo id, lobortis non dolor. Mauris vehicula maximus ex ut blandit. Proin in odio sit amet neque tincidunt viverra. Nam tincidunt, felis a scelerisque accumsan, sem velit dictum sapien, sodales scelerisque nibh urna a quam.
-
-Proin vehicula, lorem et venenatis facilisis, lectus magna volutpat dui, ut dignissim ex lorem non quam. Maecenas ultricies placerat dolor ut auctor. In in ligula a eros interdum mollis non vel metus. Nulla eu imperdiet elit. Vivamus vel pharetra mi, faucibus faucibus metus. Aliquam pretium mi in nibh ultrices consequat. Nullam ultrices tincidunt libero sed maximus. Etiam consectetur eros at nibh congue, a commodo arcu ultrices. Cras porttitor dictum elit, interdum commodo justo tincidunt in. Donec a mattis mauris. Donec fermentum, enim nec sodales tempor, magna magna tristique libero, a viverra leo odio rhoncus mi. Nulla a maximus ipsum, non iaculis mi. Phasellus dictum varius arcu, nec elementum libero interdum a. Phasellus massa velit, dictum in lacus quis, auctor imperdiet est.
-             </p>
-           </div>--
-
-
-         </div> <!- ends project_display --
-       </div> <!- ends flex-project-element-container->
-	   </div> <!-inner->
-     </div>   <!- ends flex-project-container ->
-     </section>
-	-->
 				</section>
 				<section id="contact">
 					<div class="flex-contact-container">
@@ -569,7 +464,7 @@ Proin vehicula, lorem et venenatis facilisis, lectus magna volutpat dui, ut dign
 			<div class="footer_contact_icons">
 				<ul>
 					<li><a href="https://github.com/spshah" aria-label="GitHub" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-					<li><a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+					<li><a href="https://www.linkedin.com/in/spshah97" aria-label="Linkedin" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
 					<li><a href="mailto:shahshashi97@ymail.com" aria-label="Email" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><title>Email</title><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg></a></li>		
 				</ul>
 			</div>

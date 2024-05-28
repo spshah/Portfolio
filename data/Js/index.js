@@ -80,7 +80,6 @@ function SetJobOnLoad() {
 				Indicatortransform = "translateY(calc(" + index + " * var(--tab-width)))";
 			}
 			document.querySelector(".JobSidebarindicator").style.transition = Indicatortransform;
-			console.log(Indicatortransform);
             loadExperienceTab(experienceTabs);
         });
 		eTab.addEventListener("keydown", (e) =>
@@ -103,12 +102,7 @@ function SetJobOnLoad() {
 				Indicatortransform = "translateY(" + (index * TabWidth) + "px)";
 			}
 			document.querySelectorAll(".JobSidebarindicator").forEach(function(e) {
-				//var originaltransform = window.getComputedStyle(e).transform;
-				//originaltransform = Indicatortransform
-				//e.style.transform = Indicatortransform;
-				console.log(e.style.transform);
 				e.style.setProperty('transform', Indicatortransform)
-				console.log(e);
 			});
 			loadInternshipTab(internshipTabs);
         });
@@ -149,7 +143,6 @@ function SetJobOnLoad() {
 			let panel = experienceTabs[JobTabFocus].getAttribute("aria-controls");
 			let content = document.querySelector("#" + panel);
 			content.style.display = "block";
-			console.log(panel, content);
 			// Show the Experience panel and hide the Internship panel
 			experiencePanel.removeAttribute("hidden");
 			internshipPanel.setAttribute("hidden", true);
@@ -186,8 +179,6 @@ function SetJobOnLoad() {
 	loadExperienceTab(experienceTabs);
 }
 
-// Call the function on page load
-window.onload = SetJobOnLoad;
 
 
 function nav_animation(){
@@ -212,12 +203,7 @@ const Vicons = document.querySelector(".Vcontact_icons");
 const Hicons = document.querySelector(".Hcontact_icons");
 
 document.addEventListener("scroll", function () {
-	console.log("scrolling");
-	//const rect = document.querySelector("#contact").getBoundingClientRect();
 	const rect = Hicons.getBoundingClientRect();
-	console.log(rect.top , rect.left ,rect.bottom, rect.right);
-	console.log(window.innerHeight, window.innerWidth);
-	console.log(document.documentElement.clientHeight, document.documentElement.clientWidth);
 	if(
 		rect.top >= 0 &&
 		rect.left >= 0 &&
@@ -228,24 +214,6 @@ document.addEventListener("scroll", function () {
 			Vicons.classList.remove("Vicons_animation");
 		}
 });
-function angle_drop(){
-	/*
-  const observer_1 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        var card_1 = document.getElementById("card-1");
-        var card_2 = document.getElementById("card-2");
-        var card_3 = document.getElementById("card-3");
-        card_2.classList.add('drop');
-        card_1.classList.add('move-left');
-        card_3.classList.add('move-right');
-        return;
-      }
-    });
-  });
-  observer_1.observe(document.querySelector(".flex-image-container"));
-  */
-}
 
 
 
@@ -255,12 +223,9 @@ document.addEventListener("DOMContentLoaded", function(){
     updateCss();
   UpdateLogoCoordinate();
 nav_animation();
-  angle_drop();
-  write_name();
-
-});
-
-document.querySelector(".nav-ham button").addEventListener("click", 
+  //angle_drop();
+  //write_name();
+  document.querySelector(".nav-ham button").addEventListener("click", 
 	function(){
 		document.querySelector(".nav-ham button").classList.toggle("nav-ham-cross");
 		document.querySelector(".nav-ham button").classList.toggle("nav-ham-button");
@@ -269,63 +234,15 @@ document.querySelector(".nav-ham button").addEventListener("click",
 	}
 );
 
-
-function updateCss() {
-	const ContactHeader = document.querySelector("#contact .header");
-	const ContactBar = document.querySelector(".contact_header");
-	ContactBar.style.width = ContactHeader.clientWidth;
-	}
-var i = 0;
-//window.addEventListener("mouseenter", write_name());
-//$('.banner').removeEventListener("mouseenter", () => {});
-var soft_sound = new Audio('./images/soft.wav');
-var soft_play = soft_sound.play();
-var hard_sound = new Audio('./images/hard.wav');
-var hard_play = hard_sound.play();
-hard_play.playbackRate = 1.5;
-soft_play.playbackRate = 1.5;
-const name = ['S', 'h', 'a', 's', 'h', 'i', ' ', 'P', 'r', 'a', 'k', 'a', 's', 'h', ' ', 'S', 'h', 'a', 'h'];
-
-  function write_name() {
-	  /*
-    if (i < name.length) {
-      document.getElementById("full_name").innerHTML += name[i];
-      i++;
-      if(name[i] === ' ') {
-        hard_play;
-        setTimeout(write_name, 100);
-      }
-      else {
-        soft_play;
-        setTimeout(write_name, 100);
-      }
-    }*/
-  }
-
-
-
-
-
-
-
-
-
-
-
-  //   TESTING FEATURES
-
-  /*
-  $('button').click(function() {
-    $('.curtain').addClass("up");
-    $('.portfolio').addClass("load");
-    setTimeout(()=> {write_name();},1500)
-    nav_animation();
-    angle_drop();
-
-  })
-
-  */
-  document.getElementById('playButton1').addEventListener('click', function() {
+document.querySelectorAll('aside .flex-nav-item a').forEach((nav_item) => {
+	nav_item.addEventListener("click", function(){
+		document.querySelector(".nav-ham button").classList.toggle("nav-ham-cross");
+		document.querySelector(".nav-ham button").classList.toggle("nav-ham-button");
+		document.querySelector("aside").classList.toggle("nav-ham-menu");
+		document.querySelector("aside").classList.toggle("nav-ham-menu-closed");
+	})
+		});
+document.getElementById('playButton1').addEventListener('click', function() {
     document.body.classList.add('blur');
     document.getElementById('videoOverlay1').style.display = 'flex';
 });
@@ -346,3 +263,28 @@ document.getElementById('closeButton2').addEventListener('click', function() {
     document.getElementById('videoOverlay2').style.display = 'none';
     document.getElementById('videoPlayer2').pause();
 });
+});
+
+
+
+
+
+function updateCss() {
+	const ContactHeader = document.querySelector("#contact .header");
+	const ContactBar = document.querySelector(".contact_header");
+	ContactBar.style.width = ContactHeader.clientWidth;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
